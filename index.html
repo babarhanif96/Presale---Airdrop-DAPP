@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>RUN X | The First Metaverse Move 2 Earn, Count 2 Earn and Ride 2 Earn App Based on Real Metaverse Character
+		at The Multichain Network. </title>
+	<meta name="description" content="Move 2 Earn, NFTs ,Metaverse ">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<link rel="shortcut icon" href="img/metarezlogo.html" type="image/x-icon">
+	<link href="css/assets.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&amp;family=Paytone+One&amp;display=swap"
+		rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CVarela+Round" rel="stylesheet"> -->
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="header_nav" style="display: flex;justify-content:space-between; padding: 10px 50px 10px 50px;">
+
+				<div class="plan-title "><span class="plan">Presale and Airdrop</span></div>
+				<!-- href="#open-modal" -->
+				<a
+				onclick="loadweb3()"
+				
+					class="rocket-btn rocket-btn-fixed-width rocket-btn-animated-icon ms-auto "><span
+						id="connect">connect</span></a>
+
+			</div>
+		</nav>
+	</header>
+
+
+
+
+	<section class="light-section pricing-section animated-section animated" id="presale">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="section-header animated fadeIn" data-anim-queue="1" data-anim-type="fadeIn"
+					style="opacity: 0; margin-top: 2rem;">
+					<h2 class="section-title">Presale and Airdrop</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="pricing pricing-active animated fadeInUp" data-anim-queue="4" data-anim-type="fadeInUp"
+						style="opacity: 0;">
+						<div class="plan-title"><span class="plan">PRESALE</span></div>
+						<p>Pre-Sale Ends at SEP 30, 2022</p>
+						<p>$RNX Token will be Listed on Pancakeswap and OKEx.</p>
+						<h3 style="color:rgb(14, 252, 26)">Sale Live</h3>
+						<div class="pricing-content">
+							<h2 style="color: #FFFFFF; font-size: 32px;" id="demo"></h2>
+							<ul class="collection">
+								<li class="collection-item"><b>Buy 0.01 BNB = 100 RNX</li>
+								<li class="collection-item"><b>Buy 0.1 BNB = 1000 RNX</li>
+								<li class="collection-item"><b>Buy 1 BNB = 10000 RNX</li>
+								<li class="collection-item"><b>Buy 5 BNB = 50000 RNX</li>
+								<li class="collection-item"><b>Listing on SEP 30, 2022.</li>
+								<li class="collection-item"><b>Listing Price 1 RNX = 0.041 USD</li>
+							</ul>
+						</div>
+						<input style="display: none;" id="airdropval" class="d-hidden" type="text" value="0.0035">
+						<input style="display: none;" id="airinput" class="input" placeholder="Invite By">
+						<div class="plan-signup-btn">
+							<input
+								style="width: 90%; text-align: center; border-radius: 99px; margin-bottom: 20px; padding: 12px;"
+								id="buyinput" class="" placeholder="0.01" value="0.05">
+							<a href="javascript:buystt();"
+								class="rocket-btn rocket-btn-fixed-width rocket-btn-animated-icon"><span
+									class="rocket-btn-icon-wrap"><i class="fa fa-shopping-cart"
+										aria-hidden="true"></i></span> <span class="rocket-btn-text-wrap">Buy
+									Token</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="pricing animated fadeInUp" data-anim-queue="5" data-anim-type="fadeInUp"
+						style="opacity: 0;">
+						<div class="plan-title "><span class="plan">Airdrop</span></div>
+						<p>Claim Airdrop and referral</p>
+						<div class="pricing-content">
+							<ul class="collection">
+								<li class="collection-item"><b>Referral Count is Unlimited</li>
+								<li class="collection-item"><b>Earn BNB (35%) when you refer others to Buy RNX Tokens
+										using your personal Referral Link</li>
+							</ul>
+						</div>
+						<a style="padding-left: 20px; padding-right: 20px;" href="javascript:getAirdrop();"
+							id="claimairdrop" onclick=""
+							class="rocket-btn rocket-btn-fixed-width rocket-btn-animated-icon "
+							style="text-align: center;margin-right: 5px;">Claim RNX
+						</a>
+
+						<div class="plan-signup-btn">
+							<input
+								style="width: 90%; text-align: center; border-radius: 99px; margin-bottom: 20px; padding: 12px;"
+								id="refaddress" type="text" class="input-bordered" required="required"
+								placeholder="Enter You BEP20 Address">
+
+							<a href="javascript:void(0)"
+								style="padding-left: 20px; padding-right: 20px; display: block; width: 90%; margin-bottom: 10px ;margin-left: 3rem;"
+								class="rocket-btn rocket-btn-fixed-width rocket-btn-animated-icon"
+								onclick="getreflink()">
+								<span class="rocket-btn-icon-wrap">
+									<i class="fa fa-link" aria-hidden="true"></i>
+								</span>
+								<span class="rocket-btn-text-wrap">Get Referral
+									Link
+								</span>
+							</a>
+							<a href="javascript:copyToClipboard('refaddress')" onclick="kopiraj()"
+								class="btn btn-grad btn-auto btn-md">COPY
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- <div class="container">
+				<div class="interior">
+					<a class="btn" href="#open-modal">👋 Basic CSS-Only Modal</a>
+				</div>
+			</div> -->
+			<div id="open-modal" class="modal-window">
+				<a href="#" title="Close" class="modal-close">Close</a>
+				<div class="row" >
+					<div class="col-lg-6" style=" border: 1px solid red;"  >
+						<div class="contwall">
+							<a href="#"><img src="./img/connectedjpg.jpg" alt="" width="40%" style="margin-left: 4rem;" ></a>
+							<h4>WalletConnect</h4>
+							<p>scan with WalletConnect to Connect</p>
+						</div>
+						
+					</div>	
+					<div class="col-lg-6" style=" border: 1px solid red;"  >
+						<div class="contwall">
+							<a href="#"><img src="./img/metamask.png" alt="" width="40%" style="margin-left: 4rem;" ></a>
+							<h4>Metamask Wallet</h4>
+							<p>Connect to your metamask Wallet</p>
+						</div>
+						
+					</div>	
+					<div class="col-lg-6" style=" border: 1px solid red;"  >
+						<div class="contwall">
+							<a href="#"><img src="./img/metamask.png" alt="" width="40%" style="margin-left: 4rem;" ></a>
+							<h4>Metamask Wallet</h4>
+							<p>Connect to your metamask Wallet</p>
+						</div>
+						
+					</div>	
+					<div class="col-lg-6" style=" border: 1px solid red;"  >
+						<div class="contwall">
+							<a href="#"><img src="./img/metamask.png" alt="" width="40%" style="margin-left: 4rem;" ></a>
+							<h4>Metamask Wallet</h4>
+							<p>Connect to your metamask Wallet</p>
+						</div>
+						
+					</div>	
+									
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script src="js/assets.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/web3.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>
